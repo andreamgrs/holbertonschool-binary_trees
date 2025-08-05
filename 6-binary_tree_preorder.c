@@ -11,7 +11,7 @@
  */
 void print_int_node(int num)
 {
-	printf("%d\n", num);
+	printf("n=%d\n", num);
 }
 
 /**
