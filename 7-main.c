@@ -2,7 +2,16 @@
 #include <stdio.h>
 #include "binary_trees.h"
 
-void print_int_node(int num);
+/**
+ * print_num - Prints a number
+ *
+ * @n: Number to be printed
+ */
+void print_num(int n)
+{
+    printf("%d\n", n);
+}
+
 /**
  * main - Entry point
  *
@@ -21,6 +30,6 @@ int main(void)
     root->right->right = binary_tree_node(root->right, 512);
 
     binary_tree_print(root);
-    binary_tree_preorder(root, &print_int_node);
+    binary_tree_inorder(root, &print_num);
     return (0);
 }
