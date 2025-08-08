@@ -20,7 +20,8 @@ binary_tree_t *binary_tree_uncle(binary_tree_t *node)
 	if (node->parent->parent != NULL)
 	{
 		tmp = node->parent;
-		if (node->parent->parent->right != NULL && node->parent->parent->left != NULL)
+		if (node->parent->parent->right != NULL 
+		&& node->parent->parent->left != NULL)
 		{
 			if (node->parent->parent->right == tmp)
 			{
