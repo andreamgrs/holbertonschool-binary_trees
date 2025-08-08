@@ -12,7 +12,7 @@ binary_tree_t *binary_tree_uncle(binary_tree_t *node)
 {
 	binary_tree_t *tmp;
 
-	if (node == NULL)
+	if (node == NULL || node->parent == NULL)
 	{
 		return (NULL);
 	}
@@ -36,5 +36,5 @@ binary_tree_t *binary_tree_uncle(binary_tree_t *node)
 			return (NULL);
 		}
 	}
-	return (0);
+	return (NULL);
 }
